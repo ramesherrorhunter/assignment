@@ -1,0 +1,38 @@
+---
+- name: Deploy Nginx Ingress Controller and Sample Application
+  hosts: localhost
+  gather_facts: false
+  become: true
+
+  tasks:
+    - name: Install kubectl
+      apt:
+        name: kubectl
+        state: present
+
+    - name: Install Helm
+      become_user: "{{ ansible_user }}"
+      shell: curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 && chmod 700 get_helm.sh && ./get_helm.sh
+      args:
+        executable: /bin/bash
+
+    - name: Add Helm repo for Nginx Ingress
+      become_user: "{{ ansible_user }}"
+      command: helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+
+    - name: Update Helm repositories
+      become_user: "{{ ansible_user }}"
+      command: helm repo update
+
+    - name: Install Nginx Ingress Controller
+      become_user: "{{ ansible_user }}"
+      command: helm install nginx-ingress ingress-nginx/ingress-nginx
+
+    - name: Wait for Nginx Ingress Controller pods to be ready
+      become_user: "{{ ansible_user }}"
+      command: kubectl wait --namespace ingress-nginx --for=condition=ready pod --selector=app.kubernetes.io/component=controller --timeout=180s
+
+    - name: Deploy Sample Application
+      become_user: "{{ ansible_user }}"
+      command: kubectl apply -f 
+
