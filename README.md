@@ -61,4 +61,6 @@
 
 **2.To check ingress**
 <br>
+`kubectl get ingress`
+<br>
 `dommain.com/`
