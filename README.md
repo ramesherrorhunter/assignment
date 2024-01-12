@@ -1,4 +1,4 @@
-#Kubernetes Cluster Setup:#
+##Kubernetes Cluster Setup:
 **1.Prerequisites**
 <br>
 - install awscli and configure on local machine
