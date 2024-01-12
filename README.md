@@ -23,15 +23,19 @@
 ## Nginx Ingress Setup:
 <br>
 **1.add helm chat repo**
+
 `helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx`
 <br>
 **2.update helm repo**
+
 `helm repo update`
 <br>
 **3.install ingress controller**
+
 `helm install nginx-ingress ingress-nginx/ingress-nginx`
 <br>
 **4.verify installation**
+
 `kubectl get pods -n ingress-nginx`
 <br>
 
