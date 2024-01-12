@@ -5,7 +5,9 @@
 **1.Prerequisites**
 
 <br>
-- install awscli and configure on local machine
+- install awscli
+and configure with aws credentials
+
 - install kubectl 
 to confirm the same run kubectl version
 
