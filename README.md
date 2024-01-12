@@ -4,7 +4,7 @@
 - install kubectl
   <br> to confirm the same run kubectl version
 - install eksctl
-  <br> to confimr the same run eksctl version
+  <br> to confirm the same run eksctl version
 
 
 **2.Run below command to create eks cluster**
