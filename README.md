@@ -4,7 +4,6 @@
 
 **1.Prerequisites**
 
-<br>
 - install awscli
 and configure with aws credentials
 
