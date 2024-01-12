@@ -64,3 +64,9 @@
 `kubectl get ingress`
 <br>
 `dommain.com/`
+
+## Ansible Automation:
+<br>
+**deploy ansible config**
+<br>
+`ansible-playbook -i localhost, -c local ansible_deploy.yaml`
