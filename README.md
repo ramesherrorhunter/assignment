@@ -9,10 +9,14 @@
 - install kubectl
   <br>
   to confirm the same run
+  <br>
+  
   `kubectl version`
 - install eksctl
   <br>
   to confirm the same run
+  <br>
+  
   `eksctl version`
 
 **2.Run below command to create eks cluster**
