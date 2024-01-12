@@ -49,11 +49,13 @@ to confirm the same run eksctl version
 `kubectl apply -f Service.yaml`
 `kubectl apply -f Ingress.yaml`
 
-**2.service port-forwar**
+**2.service port-forward**
 <br>
 `kubectl port-forward svc/nodejs-service 8080:8080 --address 0.0.0.0`
 
 **3.To check ingress type below url**
+<br>
+`kubectl get ingress`
 <br>
 `domain.com/`
 
