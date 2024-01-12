@@ -34,5 +34,5 @@
 
     - name: Deploy Sample Application
       become_user: "{{ ansible_user }}"
-      command: kubectl apply -f 
+      command: kubectl apply -f https://github.com/ramesherrorhunter/assignment.git/k8s/Deployment.yaml
 
