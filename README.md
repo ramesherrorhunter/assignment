@@ -6,11 +6,9 @@
 
 <br>
 - install awscli and configure on local machine
-
 - install kubectl 
 <br> 
 to confirm the same run kubectl version
-
 - install eksctl 
 <br> 
 to confirm the same run eksctl version
