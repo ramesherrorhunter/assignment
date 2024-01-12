@@ -69,7 +69,7 @@
 
 <br>
 
-**deploy ansible config**
+**1.deploy ansible config**
 
 <br>
 
