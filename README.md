@@ -6,7 +6,6 @@
 
 <br>
 - install awscli and configure on local machine
-
 - install kubectl 
 to confirm the same run kubectl version
 
