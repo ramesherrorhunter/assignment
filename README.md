@@ -23,3 +23,18 @@ to confirm the same run eksctl version
 <br>
 `eksctl get cluster`
 
+## Nginx Ingress Setup:
+
+<br>
+
+**1.add helm repo**
+`helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx`
+
+**2.update helm**
+`helm repo update`
+
+**3.Install nginx**
+`helm install nginx-ingress ingress-nginx/ingress-nginx`
+
+**4.Verify installation**
+`kubectl get pods -n ingress-nginx`
