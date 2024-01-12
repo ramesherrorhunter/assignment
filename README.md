@@ -23,6 +23,7 @@ to confirm the same run eksctl version
 <br>
 `eksctl get cluster`
 
+
 ## Nginx Ingress Setup:
 
 <br>
@@ -38,3 +39,19 @@ to confirm the same run eksctl version
 
 **4.Verify installation**
 `kubectl get pods -n ingress-nginx`
+
+
+## Sample Application Deployment:
+
+**1.Deployment**
+`kubectl apply -f Deploument.yaml`
+`kubectl apply -f Service.yaml`
+`kubectl apply -f Ingress.yaml`
+
+**2.service port-forwar**
+`kubectl port-forward svc/nodejs-service 8080:8080 --address 0.0.0.0`
+
+**3.To check ingress type below url**
+`domain.com/`
+
+
