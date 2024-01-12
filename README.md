@@ -63,7 +63,7 @@
 <br>
 `kubectl get ingress`
 <br>
-`dommain.com/`
+`domain.com/`
 
 ## Ansible Automation:
 
