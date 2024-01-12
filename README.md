@@ -74,3 +74,21 @@
 <br>
 
 `ansible-playbook -i localhost, -c local ansible_deploy.yaml`
+
+## Security with TLS/SSL:
+
+**1.obtain Sl/TLS certificate**
+
+<br>
+
+`certbot certonly  --standalone -d doamin.com`
+
+<br>
+
+**2.create k8s secrests**
+<br>
+`kubectl create secret tls tls-secret --cert=/etc/letsencrypt/live/domain.com/fullchain.pem --key=/etc/letsencrypt/live/domain.com/privkey.pem`
+
+**3.ingress deploye with tls**
+<br>
+`kubectl apply -f Ingress-tls.yaml`
