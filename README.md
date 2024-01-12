@@ -44,14 +44,17 @@ to confirm the same run eksctl version
 ## Sample Application Deployment:
 
 **1.Deployment**
+<br>
 `kubectl apply -f Deploument.yaml`
 `kubectl apply -f Service.yaml`
 `kubectl apply -f Ingress.yaml`
 
 **2.service port-forwar**
+<br>
 `kubectl port-forward svc/nodejs-service 8080:8080 --address 0.0.0.0`
 
 **3.To check ingress type below url**
+<br>
 `domain.com/`
 
 
