@@ -22,6 +22,7 @@
 
 ## Nginx Ingress Setup:
 <br>
+
 **1.add helm chat repo**
 
 `helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx`
