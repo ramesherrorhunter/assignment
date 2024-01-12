@@ -1,8 +1,8 @@
 **1.Prerequisites**
 <br>
 - install awscli and configure on local machine
-- install kubectl
-- install eksctl
+- install kubectl <br> to confirm the same run kubectl version
+- install eksctl <br> to confimr the same run eksctl version
 
 
 **2.Run below command to create eks cluster**
