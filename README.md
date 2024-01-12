@@ -49,3 +49,16 @@
 `kubectl get pods -n ingress-nginx`
 <br>
 
+## Sample Application Deployment:
+
+**1.Deploye K8s manifest**
+<br>
+`kubectl apply -f Deployment.yaml`
+<br>
+`kubectl apply -f Service.yaml`
+<br>
+`kubectl apply -f Ingress.yaml`
+
+**2.To check ingress**
+<br>
+`dommain.com/`
